@@ -61,7 +61,7 @@ DAT.Globe = function(container, opts) {
         'varying vec3 vNormal;',
         'void main() {',
           'vNormal = normalize( normalMatrix * normal );',
-          'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
+          'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 0.97 );',
         '}'
       ].join('\n'),
       fragmentShader: [
